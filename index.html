@@ -5,16 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Anand M</title>
     <style>
-      body {
+    .body {
         margin-top: 1px;
         margin: auto;
         padding: 1px;
         background-color: #1f1d1d;
         background-image: linear-gradient(0deg, rgba(168,124,205,0.5), #000000);
        }
+       @media (max-width:768px) {
        .box {
+        max-width: 100%;
+       }
+        
+       }
+       .box {
+        width:94rem;
         text-align: right;
-        line-height: 100px;
+        line-height: 50px;
+        background-color: transparent;
+        position: fixed;
        }
         .word {
         padding: 50px;
@@ -24,7 +33,6 @@
         .word1 {
             color: azure;
             text-align: left;
-            margin-left: 100px;
             margin-top: -100px;
             font-family: arial;
             letter-spacing: 1px;
@@ -100,6 +108,11 @@
             height: 35px;
             font-family: arial;
         }
+        .h1 {
+            font-size: x-large;
+            color: azure;
+            font-display: underline;
+        }
         .box1 {
             width: none;
             height: 30px;
@@ -112,9 +125,6 @@
             background-color: rgb(216, 216, 216);
             margin-top: -20px;
             color: rgb(83, 83, 83);
-        }
-        .heading {
-            font-size: x-large;
         }
         .container2 {
             margin-left: 420px;
@@ -157,12 +167,12 @@
 <body>
 <!-- <script src="script.js"></script> -->
 <div class="box">
+    <a class="word1" id="home">ANAND M</a>
     <a class="word1" href="#home">HOME</a>
     <a class="word" href="#education">EDUCATION</a>
     <a class="word" href="#experiance">EXPERIANCE</a>
     <a class="word" href="#contact">CONTACT</a>
     <a class="word" href="#skill">SKILLS</a>
-    <div class="word1" id="home">ANAND M</div>
 </div>
 <div class="word2">Hey There</div><div class="word22">I'm </div><div class="sw21"><b>ANAND M</b></div>
 <div class="container" font-size="20px"><p>To work with maximum potential in a challenging and
@@ -170,12 +180,12 @@
     diverse group of people and enhancing my
     professional skills with learning and experience for
     carrier growth<br>
-    </p></div><a href="Anand M New R.pdf" download><button class="button" id="resume">Download</button></a>
+    </p></div><a href="Anand M New R.pdf" download><button class="button">Download</button></a>
     <div class="c1">download my resume -></div>
 </div><div class="imgbox"></div>
 <div class="img"><img src="mirror img.png" alt="luci"></div>
 <div class="box1">
-    <div><h4 class="heading" id="skill">SOFTWARE SKILLS</h4></div>
+    <div><h1 class="h1" id="skill">SOFTWARE SKILLS</h1></div>
 <div class="container2"><dl>
     <li><i>number</i></li>
     <li><i>gmail</i></li>
